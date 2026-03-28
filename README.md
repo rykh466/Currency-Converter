@@ -15,10 +15,10 @@ A modern, responsive currency converter web app that allows users to convert bet
 https://currexc.netlify.app/
 
 # Technologies Used
-HTML5
-CSS3 (Flexbox + Grid)
-JavaScript (Vanilla JS)
-ExchangeRate API
+- HTML5
+- CSS3 
+- JavaScript (Vanilla JS)
+- ExchangeRate API
 
 # Project Structure
 ├── index.html
