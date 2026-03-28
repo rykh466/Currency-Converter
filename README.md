@@ -32,6 +32,13 @@ https://currexc.netlify.app/
 3. App fetches live exchange rates from API
 4. Displays converted result instantly
 
+# How to Run
+
+1. Clone the repository:
+   git clone https://github.com/rykh466/Currency-Converter.git
+2. Open the project folder
+3. Run index.html in your browser
+
 # API Used 
 - https://api.exchangerate-api.com/v4/latest/{currency}
 
