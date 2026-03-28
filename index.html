@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <h2>💱 Currency Converter</h2>
+
+  <div class="display">
+    <input type="text" id="amount" placeholder="Enter amount" autocomplete="off">
+  </div>
+
+  <div class="selectors">    
+    <div class="field">
+      <label>From</label>
+      <select id="fromCurrency">
+        <option value="USD" selected>USD ($)</option>
+        <option value="INR">INR (₹)</option>
+        <option value="EUR">EUR (€) </option>
+        <option value="GBP">GBP (£)</option>
+        <option value="JPY">JPY (¥)</option>
+      </select>
+    </div>
+
+    <div class="swap-field">
+        <label>&nbsp;</label>
+        <button class="swap-btn" onclick="swapCurrencies()">⇄</button>
+    </div>
+
+    <div class="field">
+      <label>To</label>
+      <select id="toCurrency">
+        <option value="USD">USD ($)</option>
+        <option value="INR" selected>INR (₹)</option>
+        <option value="EUR">EUR (€) </option>
+        <option value="GBP">GBP (£)</option>
+        <option value="JPY">JPY (¥)</option>
+      </select>
+    </div>
+  </div>
+
+  <button class="convert-btn" onclick="convertCurrency()">Convert</button>
+
+  <p id="result"></p>
+
+  <div class="keypad">
+    <button onclick="pressKey('1')">1</button>
+    <button onclick="pressKey('2')">2</button>
+    <button onclick="pressKey('3')">3</button>
+
+    <button onclick="pressKey('4')">4</button>
+    <button onclick="pressKey('5')">5</button>
+    <button onclick="pressKey('6')">6</button>
+
+    <button onclick="pressKey('7')">7</button>
+    <button onclick="pressKey('8')">8</button>
+    <button onclick="pressKey('9')">9</button>
+
+    <button onclick="pressKey('.')">.</button>
+    <button onclick="pressKey('0')">0</button>
+    <button onclick="clearInput()">⌫</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
